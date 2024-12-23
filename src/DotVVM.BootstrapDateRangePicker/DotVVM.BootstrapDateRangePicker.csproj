@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net472</TargetFrameworks>
+    <PackageId>DotVVM.BootstrapDateRangePicker</PackageId>
+    <AssemblyName>DotVVM.BootstrapDateRangePicker</AssemblyName>
+    <Authors>ppech</Authors>
+    <Description>DotVVM control for bootstrap-daterangepicker</Description>
+    <PackageTags>dotvvm;asp.net;dotnetcore;bootstrap;datepicker;daterangepicker</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\daterangepicker.min.js" />
+    <None Remove="Scripts\DotVVM.BootstrapDateRangePicker.js" />
+    <None Remove="Scripts\moment-with-locales.min.js" />
+    <None Remove="Styles\DotVVM.BootstrapDateRangePicker.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\daterangepicker.min.js" />
+    <EmbeddedResource Include="Scripts\DotVVM.BootstrapDateRangePicker.js" />
+    <EmbeddedResource Include="Scripts\moment-with-locales.min.js" />
+    <EmbeddedResource Include="Styles\DotVVM.BootstrapDateRangePicker.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotVVM" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

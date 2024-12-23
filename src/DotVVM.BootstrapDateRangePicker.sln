@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotVVM.BootstrapDateRangePicker", "DotVVM.BootstrapDateRangePicker\DotVVM.BootstrapDateRangePicker.csproj", "{4FEB07FB-911C-4356-AB7B-936E42DF003A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotVVM.BootstrapDateRangePicker.Sample", "DotVVM.BootstrapDateRangePicker.Sample\DotVVM.BootstrapDateRangePicker.Sample.csproj", "{3348217E-853B-4602-AFF6-BBFE0ECF22E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FEB07FB-911C-4356-AB7B-936E42DF003A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEB07FB-911C-4356-AB7B-936E42DF003A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEB07FB-911C-4356-AB7B-936E42DF003A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEB07FB-911C-4356-AB7B-936E42DF003A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3348217E-853B-4602-AFF6-BBFE0ECF22E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3348217E-853B-4602-AFF6-BBFE0ECF22E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3348217E-853B-4602-AFF6-BBFE0ECF22E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3348217E-853B-4602-AFF6-BBFE0ECF22E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

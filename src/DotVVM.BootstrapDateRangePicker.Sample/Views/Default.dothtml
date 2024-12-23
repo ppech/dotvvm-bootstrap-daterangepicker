@@ -1,0 +1,127 @@
+﻿@viewModel DotVVM.BootstrapDateRangePicker.Sample.ViewModels.DefaultViewModel, DotVVM.BootstrapDateRangePicker.Sample
+<!doctype html>
+<html lang="cs">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DotVVM.BootstrapDateRangePicker.Sample</title>
+    <dot:RequiredResource Name="font-awesome" />
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="py-3">DotVVM.BootstrapDateRangePicker.Sample</h1>
+
+        <div class="form-group">
+            <cc:DateRangePicker Value="{value: DateRange}"
+                                Ranges="{resource: Ranges}"
+                                ApplyLabel="OK"
+                                CancelLabel="Storno"
+                                CustomRangeLabel="Vlastní"
+                                class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><span class="fas fa-calendar"></span></span>
+                </div>
+                <span class="form-control" Visible="{value: DateRange.HasValue && !DateRange.HasSelectedRange}">
+                    <dot:Literal Text="{value: DateRange.Start}" FormatString="d. M. yyyy">
+                    </dot:Literal>
+                    <span Visible="{value: !DateRange.IsOneDay}">
+                        <span class="separator">-</span>
+                        <dot:Literal Text="{value: DateRange.End}" FormatString="d. M. yyyy">
+                        </dot:Literal>
+                    </span>
+                </span>
+                <span class="form-control" Visible="{value: DateRange.HasValue && DateRange.HasSelectedRange}">
+                    <dot:Literal Text="{value: DateRange.SelectedRange.Label}">
+                    </dot:Literal>
+                </span>
+                <div class="input-group-append" Visible="{value: DateRange.HasValue}">
+                    <dot:Button Click="{command: ClearDateRange()}"
+                                ButtonTagName="button"
+                                class="input-group-text">
+                        <span class="fas fa-times"></span>
+                    </dot:Button>
+                </div>
+                <span class="form-control text-muted" IncludeInPage="{value: !DateRange.HasValue}">
+                    Vyberte datum
+                </span>
+            </cc:DateRangePicker>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>Start</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.Start}" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>End</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.End}" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>HasValue</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.HasValue ? "true" : "false"}" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>IsOneDay</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.IsOneDay ? "true" : "false"}" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>HasSelectedRange</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.HasSelectedRange ? "true" : "false"}" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><strong>SelectedRangeIndex</strong></div>
+                <div class="col">
+                    <dot:Literal Text="{value: DateRange.SelectedRangeIndex.HasValue ? DateRange.SelectedRangeIndex.Value: "null"}" />
+                </div>
+            </div>
+        </div>
+        <div Visible="{value: DateRange.HasSelectedRange}">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-2"><strong>SelectedRange Label</strong></div>
+                    <div class="col">
+                        <dot:Literal Text="{value: DateRange.SelectedRange.Label}" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-2"><strong>SelectedRange Start</strong></div>
+                    <div class="col">
+                        <dot:Literal Text="{value: DateRange.SelectedRange.Start}" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-2"><strong>SelectedRange End</strong></div>
+                    <div class="col">
+                        <dot:Literal Text="{value: DateRange.SelectedRange.End}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
