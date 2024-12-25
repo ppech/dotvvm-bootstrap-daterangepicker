@@ -34,7 +34,7 @@ jobs:
         run: dotnet build ${{ env.PROJECT_PATH }} --configuration Release --no-restore
 
       - name: Create NuGet package
-        run: dotnet pack ${{ env.PROJECT_PATH }} --configuration Release --no-restore --no-build --include-symbols --output ${{ env.OUTPUT_DIRECTORY }}
+        run: dotnet pack ${{ env.PROJECT_PATH }} --configuration Release --no-restore --no-build --output ${{ env.OUTPUT_DIRECTORY }}
 
       - name: Publish NuGet package
         env:
