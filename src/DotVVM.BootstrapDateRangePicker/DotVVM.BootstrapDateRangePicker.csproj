@@ -7,9 +7,8 @@
     <Authors>ppech</Authors>
     <Description>DotVVM control for bootstrap-daterangepicker</Description>
     <PackageTags>dotvvm;asp.net;dotnetcore;bootstrap;datepicker;daterangepicker</PackageTags>
-  </PropertyGroup>
-
-  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <!-- we'll do our own versioning -->
     <GitVersion>false</GitVersion>
   </PropertyGroup>
@@ -25,6 +24,7 @@
   </Target>
 
   <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
     <None Remove="Scripts\daterangepicker.min.js" />
     <None Remove="Scripts\DotVVM.BootstrapDateRangePicker.js" />
     <None Remove="Scripts\moment-with-locales.min.js" />
