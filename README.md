@@ -1,17 +1,20 @@
 # DotVVM Bootstrap Daterangepicker
 
+[![NuGet](https://img.shields.io/nuget/v/DotVVM.BootstrapDateRangePicker)](https://www.nuget.org/packages/DotVVM.BootstrapDateRangePicker)
+[![License](https://img.shields.io/github/license/ppech/dotvvm-bootstrap-daterangepicker)](LICENSE)
+
 This is a [DotVVM](https://www.dotvvm.com/) control that wraps the [Bootstrap Daterangepicker](https://www.daterangepicker.com/) jQuery plugin.
 
 ## Installation
 
-You can install the control from [NuGet](https://www.nuget.org/packages/DotVVM.Bootstrap.Daterangepicker/):
+You can install the control from [NuGet](https://www.nuget.org/packages/DotVVM.BootstrapDateRangePicker):
 ```
-Install-Package DotVVM.Bootstrap.Daterangepicker
+Install-Package DotVVM.BootstrapDateRangePicker
 ```
 
 or using the `dotnet` command line:
 ```
-dotnet add package DotVVM.Bootstrap.Daterangepicker
+dotnet add package DotVVM.BootstrapDateRangePicker
 ```
 
 ## Usage
